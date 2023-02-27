@@ -18,7 +18,7 @@ describe('Usuarios - Update', () => {
     expect(res1.statusCode).toEqual(StatusCodes.CREATED);
     
     const resAtualizada = await testServer
-      .get(`/usuarios/${res1.body}`)
+      .put(`/usuarios/${res1.body}`)
       .send({
         nome: 'Aquila A',
         email: 'aquila@pca.br'

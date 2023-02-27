@@ -22,7 +22,7 @@ describe('Usuarios - GetById', () => {
       .send();
 
     expect(resBuscada.statusCode).toEqual(StatusCodes.OK);
-    expect(resBuscada.body).toHaveProperty('nome','email');
+    expect(resBuscada.body).toHaveProperty('nome');
   });
 
 });

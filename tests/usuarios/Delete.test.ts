@@ -9,7 +9,7 @@ describe('Usuarios - DeleteById', () => {
   it('Apaga registro', async () => {
 
     const res1 = await testServer
-      .delete('/usuarios')
+      .post('/usuarios')
       .send({
         nome: 'Aquila',
         email: 'aquila@pca.br'
